@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+  <link rel = "icon" type = "image/png" href = "../static/images/icon.png">
+    <!-- For apple devices -->
+  <link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/about.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/fullpage.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="header">
+		<div class="small">
+    	<div class="brand">
+    	  <a href="../"><img alt="Communicando Logo" src="../static/images/newlogo.png"></a>
+    	</div>
+    	<div class="topnav right">
+      	<a class="link" href="../">Home</a>
+      	<a class="link active-l" href="../about/">About</a>
+				<a class="link" href="../team/">Team</a>
+				<a class="link" id="events" href="../events/">Events</a><!-- <i class="fa fa-caret-down"></i>-->
+				<!-- <div class="dropdown-content">
+         	<a href="../events/" class="link">Literati 9</a>
+         	<a href="../literati8/" class="link">Literati 8</a>
+         	 <a href="../online/" class="link">Online Events</a> 
+				</div> -->
+				<a class="link" href="../contact/">Contact Us</a>
+				<a class="img-link" href="https://www.facebook.com/literarybrainsatwork/" target="_blank"><img style="width:30px;" src="../static/images/f.png" alt="Facebook" /></a>
+				<a class="img-link" href="https://www.instagram.com/communicando/" target="_blank"><img src="../static/images/i.png" alt="Instagram" /></a>
+			</div> 
+		</div>
+	</div>
+
+  <div id="fullpage">
+    <div class="section active" id="section0">
+        <div class="main">
+          <div class="main-inner">
+            <div class="pic">
+              <img src="../static/images/CCD Logo.png" alt="CCD Logo" />
+            </div>
+	    <h1>About Communicando</h1>
+            <div class="content">
+              <p>An abode for dreamers, poets, orators and above all literary enthusiasts - Communicando, the literary club of CBIT, has been painting the world in all hues of joy and fascination, helping language lovers escape the mundanity of life for over a decade now. </p>
+              <p>Communicando's amour propre - Literati is one of the finest literary festivals in Hyderabad and brings with it a chance to indulge in fiery debates, mind boggling quizzes, captivating crime mysteries and many more exciting events that fill the crowd with eclectic fervour.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="main">
+          <div class="main-inner">
+            <div class="pic other">
+              <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">LITERATI</text>
+                </symbol>
+                  
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+            </div>
+	    <h1>About Literati</h1>
+            <div class="content">
+              <p>Literati is CBIT's two day annual literary fest organised by Communicando, the literary club of CBIT. Since 2010 we have been striving to put forth fun and creative events in English, Hindi and Telugu with the aim to bring out the creative side of the participants. 
+              We have conducted 9 editions of Literati and with every passing year Literati grows bigger and better, hosting a  diverse range of events for the students. </p>
+              <p>Apart from regular events like group discussions and debates, Literati hosts quizes, crime investigation, story telling and many more, so everybody can find their interests. It also holds workshops and talks by eminent people in the spirit to learn and explore ourselves. </p>
+              <p>The fest is organised entirely by the students under the guidance of our professors, working day in and day-out to make it successful. Every year Literati sees participants from different colleges and schools all over the state coming in with the zeal to have an amazing experience and wanting to come back the next year as the two day fiesta ends.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- <div class="section" id="section2">
+        <h1>Section 1</h1>
+    </div> -->
+
+  </div>
+
+  <script type="text/javascript" src="../static/js/fullpage.js"></script>
+<!-- <script type="text/javascript" src="../static/js/examples.js"></script> -->
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['linear-gradient( #f3defc 0%, #63a3e6 100%)', 'linear-gradient(#f3defc, #63a3e6)'],
+        anchors: ['ccd', 'literati'],
+        menu: '#menu',
+        lazyLoad: true,
+        navigation: true,
+        navigationPosition: 'right',
+	normalScrollElements: '.content',
+        // navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+  </script>
+
+  </body>
+</html>

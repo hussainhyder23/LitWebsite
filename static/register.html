@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel = "icon" type = "image/png" href = "../static/images/icon.png">
+		<!-- For apple devices -->
+	<link rel = "apple-touch-icon" type = "image/png" href = "../static/images/icon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+
+  </head>
+  
+  <body>
+  
+    <!-- <div class="container">    -->
+		<div class="header">
+			<div class="small">
+    		<div class="brand">
+    		  <a href="../"><img alt="Communicando Logo" src="../static/images/logo.png"></a>
+    		</div>
+    		<div class="topnav right">
+      		<a class="link" href="../">Home</a>
+      		<a class="link" href="../about/">About</a>
+      		<a class="link" href="../team/">Team</a>
+      		<a class="link" href="../events/">Events</a>
+					<a class="link" href="../contact/">Contact Us</a>
+					<a class="img-link" href="https://www.facebook.com/literarybrainsatwork/" target="_blank"><img style="width:30px;" src="../static/images/f.png" alt="Facebook" /></a>
+					<a class="img-link" href="https://www.instagram.com/communicando/" target="_blank"><img src="../static/images/i.png" alt="Instagram" /></a>
+				</div> 
+			</div>
+		</div>
+		<br />
+		
+		<div class="main">
+			<h1>Registration Form</h1>
+			<div class="register-form">
+				<form action="/register/" method="POST">
+					
+					<div class="form-row">
+						<div class="col-half">
+							<div class="input-field">
+								<span><i aria-hidden="true" class="fa fa-user"></i></span>
+								<input type="text" name="FName" placeholder="First Name" required/>
+							</div>
+						</div>
+						
+						<div class="col-half">
+							<div class="input-field">
+								<span><i aria-hidden="true" class="fa fa-user"></i></span>
+								<input type="text" name="LName" placeholder="Last Name" />	
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-row set2">
+						<div class="input-field">
+							<span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+							<input type="email" name="email" placeholder="Email" required/>
+						</div>
+					</div>
+					
+					<div class="form-row set2">
+						<div class="input-field">
+							<span><i aria-hidden="true" class="fas fa-mobile"></i></span>
+							<input type="text" name="number" placeholder="Phone Number" required/>
+						</div>
+					</div>
+					
+					<div class="form-row set2">
+						<div class="input-field">
+							<span><i aria-hidden="true" class="fas fa-university "></i></span>
+							<input type="text" name="college" placeholder="College" required/>
+						</div>
+					</div>
+
+					<div class="form-row">
+						
+						<div class="col-half">
+							<div class="input-field">
+								<span><i aria-hidden="true" class="fa fa-user"></i></span>
+								<div class="select">
+									<label for="year">Year</label>
+									<select name="year" id="year">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-half">
+							<div class="input-field">
+								<span><i aria-hidden="true" class="fa fa-user"></i></span>
+								<div class="select">
+									<label for="branch">Branch</label>
+									<select name="branch" id="branch">
+										<option value="BIO-TECH">BIO-TECH</option>
+										<option value="CHEMICAL">CHEMICAL</option>
+										<option value="CIVIL">CIVIL</option>
+										<option value="CSE">CSE</option>
+										<option value="ECE">ECE</option>
+										<option value="EEE">EEE</option>
+										<option value="IT">IT</option>
+										<option value="MECHANIcAL">MECHANICAL</option>
+										<option value="MBA">MBA</option>
+										<option value="MCA">MCA</option>
+										<option value="BIO-TECH">OTHER</option>
+									</select>	
+								</div>
+							</div>
+						</div>
+				
+					</div>
+					
+					<div class="form-row">
+						<div class="label">
+							<!-- <span><i class="fas fa-calendar-alt"></i></span> -->
+							<label style="text-align:right;"><b><u>Events</u></b></label>
+						</div>
+						<div class="buttons">
+							<div class="inner-chk">
+								<label><input type="checkbox" name="events" value="Mr & Ms Literati" checked />Mr & Ms Literati</label>
+								<label><input type="checkbox" name="events" value="Take de Bait" />Take de Bait</label>
+								<label><input type="checkbox" name="events" value="Fastest Finger First" />Fastest Finger First</label>
+								<label><input type="checkbox" name="events" value="Whodunnit" />Whodunnit</label>
+								<label><input type="checkbox" name="events" value="Melange" />Melange</label>
+								<label><input type="checkbox" name="events" value="Kathyogita" />Kathyogita</label>
+								<label><input type="checkbox" name="events" value="Maya Vichhuta" />Maya Vichhuta</label>
+								<label><input type="checkbox" name="events" value="Write Angle" />Write Angle</label>
+							</div>
+						</div>				
+					
+					</div>
+					
+					<div class="form-row submit">
+						<input type="submit" value="Submit" class="btn btn-primary btn-lg" />
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<br >
+
+		<div class="container" style="width:80%">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					{% for message in messages %}
+					  	<div class="alert alert-warning alert-dismissible" role="alert">
+					  	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							{{message}}
+					  	</div>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
+
+		</div>
+			
+			<!-- {% block body %}{% endblock %} -->
+		
+
+
+
+		
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

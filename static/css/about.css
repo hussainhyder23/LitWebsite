@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round');
+
+h1, h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+body.slider__body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	/* background: linear-gradient(to bottom right, #ffff66 0%, #99ffcc 100%); */
+	color: #000000 !important;
+
+}
+
+section {
+	height: 100%;
+}
+
+/* .header {
+	position: fixed;
+} */
+section > span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 7vw;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.slider__container {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 500ms ease-in-out;
+	transition: -webkit-transform 500ms ease-in-out;
+	-o-transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.slider__page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__indicators {
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.slider__indicator {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 10px 0;
+	border-radius: 100px;
+	background-color: #fff;
+	cursor: default;
+}
+.slider__indicator--active {
+	opacity: 0.3;
+}
+
+.main {
+	width: 100%;
+	margin: auto;
+	vertical-align: middle;
+	/* border: 5px solid white; */
+	height: 100%;
+	padding: 30px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.main-inner {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%,-45%);
+	width: 90%;
+	height: auto;
+	margin: auto;
+	/* margin-top: 70px; */
+	/* border: 1px solid; */
+	padding: 10px;	
+}
+
+.pic{
+	position: absolute;
+	/* top: 50%; */
+	width: 38%;
+	max-height: 90%;
+	/* min-height: 10%; */
+	float: left;
+	/* border: 1px solid white; */
+	margin: 0 auto;
+	text-align: center;
+}
+
+.other {
+	top: 50%;
+	transform: translate(0%,-50%); 
+}
+
+.content {
+	width: 60%;
+	float: right;
+	/* border: 1px solid red; */
+
+}
+
+.pic img{
+	margin: auto;
+	width: 60%;
+	/* max-height: 100%; */
+}
+
+.main-inner  h1{
+	border-bottom: 5px solid #fff;
+	font-family: 'Bree Serif', cursive, sans-serif;
+	text-emphasis: bold;
+	font-size: 45px;
+	border-color: #FF0000;
+	margin-left: 450px;
+}
+
+.content p {
+	text-align: justify;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 15px;
+}
+
+#ccd .content p{
+	font-size: 30px;
+}
+
+.link .active a{
+	font-size: 60px;
+	border-bottom: 2px solid red;
+}
+
+svg {
+    display: block;
+    font: 150px 'Montserrat';
+    /* width: 100%; */
+    /* border: 1px solid white; */
+    height: 100%;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #0099FF;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.main-inner {
+		width: 100%;
+	}
+
+	.pic, .content {
+		width: 93%;
+	}
+	
+	.pic img{
+		position: relative;
+		top: -30px;
+		left: 20px;
+
+	}
+	.main-inner {
+		position: relative;
+		height: 60%;
+		top: 50%;
+	}
+
+	.pic {
+		width: 100%;
+		float: none;
+		/* position: absolute; */
+		height: 30%;
+		top: 10px;
+		right: 20px;
+		display: block;
+	}
+
+	.content {
+		float: none;
+		position: absolute;
+		top: 30%;
+		height: 65%;
+		display: block;
+		overflow: auto;
+	}
+
+	.main-inner  h1 {
+		font-size: 15px;
+   		border-bottom: 5px solid #fff;
+		font-family: 'Bree Serif', cursive, sans-serif;
+		text-emphasis: bold;
+		border-color: #FF0000;
+		margin-left: 0px;
+		margin-top: 70px;
+	}
+
+	.content p {
+		font-size: 10px;
+
+	}
+
+	.pic img {
+		width: 30%;
+		/* height: 10%; */
+	}
+}

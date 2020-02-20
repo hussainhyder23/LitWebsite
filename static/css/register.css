@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round');
+
+h1, h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* overflow: hidden; */
+    width: 100%;
+    height: auto;
+    color: white;
+    background: #ED3D4F;
+    /* background: linear-gradient(to bottom right, #ffccff 16%, #66ffff 95%); */
+
+}
+
+.container {
+    height: auto;
+    position: relative;
+}
+
+.main {
+    position: relative;
+    top: 60px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid; */
+    background: #353849;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: auto;
+}
+
+.register-form {
+    height: auto;
+    padding: 10px;
+}
+
+.main h1 {
+    text-align: center;
+    border-bottom: 6px solid red;
+}
+
+.form-row {
+    width: 95%;
+    /* border: 1px solid; */
+    margin: 10px auto;
+}
+
+.form-row .label {
+    width: 10%;
+    /* border: 1px solid red; */
+    vertical-align: middle;
+}
+
+/* .form-row label {
+
+} */
+
+.col-half {
+    width: 45%;
+    /* border: 1px solid red; */
+    margin: 5px auto;
+}
+
+.col-half .input-field span {
+    width: 10%;
+    /* border: 1px solid blue; */
+    margin: 10px auto;
+}
+
+.col-half .input-field input[type="text"] {
+    
+    position: relative;
+    width: 84%;
+    left: -15px;
+    /* border: 1px solid blue; */
+}
+
+.input-field {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    /* border: 1px solid green; */
+}
+
+.input-field input[type="text"], input[type="email"], option {
+    width: 95%;
+    float: right;
+    margin: 5px auto;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+input[type="checkbox"]{
+    position: relative;
+    min-width: 15px; /*Desired width*/
+    min-height: 15px; /*Desired height*/
+    top: 2.5px;
+}
+
+.input-field span {
+    width: 5%;
+    float: left;
+    margin: 15px auto;
+    /* border: 1px solid red; */
+    height: 100%;
+
+}
+
+.label {
+    width: 25%;
+    float: left;
+    /* border: 1px solid; */
+    text-align: center;
+
+}
+
+.buttons {
+    width: 90%;
+    float: right;
+    /* padding: 10px; */
+    /* margin:  */
+    /* border: 1px solid; */
+}
+
+.buttons label {
+    margin: 5px;
+}
+
+.label label{
+    text-align: center;
+    display: block;
+    /* border: 1px solid green;  */
+    /* width: 50%; */
+    margin-top: 20px;
+    /* padding: 5px; */
+    float: left;
+}
+
+.inner-chk {
+    padding: 20px;
+
+}
+
+.inner-chk label{
+    display: inline-block;
+    width: 160px;
+    /* border: 1px solid red; */
+    margin: 0px 0px;
+}
+
+.submit {
+    width: 20%;
+    margin: auto;
+}
+
+.submit input {
+    width: 100%;
+}
+
+.select {
+    /* position: relative; */
+    border: 0px solid;
+    /* top: 30%; */
+}
+
+/* select {
+    padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+} */
+
+/* .select select{
+    width: 60%;
+} */
+
+#year {
+    width: 40%;
+    margin: 10px;
+}
+
+#branch {
+    width: 55%;
+    margin: 10px;
+    
+
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.set2{
+    position: relative;
+    margin: 25px !important;
+    left: -10px;
+    width: 92%;
+    top: -20px;
+}
+
+@media screen and (max-width:800px) {
+
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 15px;
+  }
+
+  .brand{
+    margin:auto;
+    width: 100%;
+    display: block;
+
+  }
+
+  .topnav{
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+
+  }
+
+  .header .small .link{
+    padding: 5px;
+    margin: auto;
+    font-size: 13px;
+    align-items: center;
+  }
+
+  .header .small .img-link img{
+
+     max-width: 23px;
+     max-height: 20px;
+
+   }
+
+   .main{
+     width: 100%;
+     top: 110px;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+   .buttons{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+   .form-row{
+     margin-top: 0;
+   }
+
+   .col-half{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+   .submit{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+
+   .container {
+    margin-top: 10px;
+}
+
+    .header .small .link{
+        font-size: 10px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .input-field input[type="text"], input[type="email"] {
+        width: 90%;
+    }
+
+    .col-half .input-field input[type="text"] {
+        position: relative;
+        width: 90%;
+        left: 0px;
+    }
+
+    .label{
+
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    }
+ }
+
+ @media screen and (min-height:1024px) {
+    .main {
+        top: 170px;
+    }
+
+    .container {
+        top: 90px
+    }
+ }
+ 

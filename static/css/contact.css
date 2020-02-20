@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round');
+
+
+h1, h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background: ;*/
+    background-color: #F1C233;
+    background-image: -webkit-linear-gradient(180deg, #CBECFC  50%, #CBECFC 50%);
+    color: #000000 !important;
+}
+
+
+.main {
+    position: relative;
+    top: 70px;
+    width: 95%;
+    margin-top: 30px;
+    margin: auto;
+    padding: 10px;
+    height: 80%;
+    /* border: 1px solid; */
+}
+
+.header {
+    /* border: 1px solid magenta; */
+    position: sticky;
+    width: 99%;
+}
+
+.location {
+    /* border: 1px solid red; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+    float: right;
+    margin:auto;
+    /* float: left; */
+    display: inline-block;
+
+}
+
+.details {
+    /* border: 1px solid green; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    width: 45%;
+    height: 100%;
+
+    float: left;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;;
+}
+
+.contact-main   {
+    width: 100%;
+    height: 24%;
+    /* border: 3px solid; */
+    margin: auto;
+    padding: auto;
+}
+
+.social-media {
+    width: 48%;
+    height: 100%;
+    float: left;
+    /* height: 24%; */
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+.contact {
+    width: 48%;
+    height: 100%;
+    min-height: auto;
+    float: right;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    /* margin: auto; */
+}
+
+.contact span {
+    /* border: 1px solid; */
+    margin: auto;
+    /* font-size: 20px; */
+}
+
+.mapouter{
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin: 10px auto;
+}
+
+.map {
+    width: 100%;
+    height: 80%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+.address::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.address::-webkit-scrollbar-track {
+  background: #0000;
+}
+
+/* Handle */
+.address::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.address::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.address {
+    /* border: 1px solid gray; */
+    /* margin: 5px; */
+    /* padding: 10px;   */
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    overflow: auto;
+}
+
+h2 {
+    border-bottom: 3px solid rgb(22,105,164);
+}
+
+.social {
+    width: 100%;
+    /* border: 1px solid maroon; */
+    /* padding: 10px; */
+}
+
+.social a{
+    /* width: 50px;
+    height: 50px; */
+    /* border: 1px solid red; */
+    display: inline-block;
+    color: red;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 90%;
+    max-height: 400px;
+}
+
+.social img {
+    width: 50px;
+    height: auto;
+}
+
+.message-us {
+    width: 100%;
+    /* height: 75%; */
+    max-height: auto;
+    /* border: 1px solid mediumblue; */
+}
+
+.msg-form {
+    width: 99%;
+    /* height: 90%; */
+    /* border: 1px solid rosybrown; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.row {
+    width: 110%;
+    margin: auto;
+    padding: 10px;
+    /* border: 1px solid red; */
+    vertical-align: text-top;
+}
+
+.hidden {
+   display: none;
+}
+
+.row label {
+    width: 20%;
+    display: inline-block;
+    /* border: 1px solid blue; */
+    /* float: left; */
+}
+
+.row input[type="text"], input[type="email"], textarea {
+    width: 70%;
+    display: inline-block;
+    /* border: 1px solid green; */
+    vertical-align: top;
+    /* float: right; */
+}
+
+.row input[type="submit"] {
+    display: inline-block;
+    margin: auto;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+@media screen and (max-width:800px) {
+
+  body {
+      overflow-y: auto;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 15px;
+  }
+
+  .main {
+      top: 100px;
+  }
+
+  .brand{
+    margin:auto;
+    width: 100%;
+    display: block;
+
+  }
+
+  .topnav{
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+
+  }
+
+  .header .small .link{
+    padding: 5px;
+    margin: auto;
+    font-size: 13px;
+    align-items: center;
+  }
+
+  .header .small .img-link img{
+
+     max-width: 23px;
+     max-height: 20px;
+
+
+
+   }
+
+  .location{
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+
+
+  }
+
+  .social-media{
+    float: none;
+  }
+  .details{
+    float: none;
+    width: 100%;
+  }
+
+  .details .contact-main .message-us{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    float: none;
+
+
+
+  }
+  .details .contact-main .contact{
+    margin:auto;
+    width: 100%;
+    display: block;
+
+  }
+
+  .container {
+    
+    position: relative;
+    top: 350px;
+    /* bottom: 10px; */
+    height: 100px !important;
+    }
+
+    .container .alert {
+        /* top: 600px; */
+    }
+
+  body {
+      font-size: 12px;
+      /* overflow: hidden; */
+      /*background: linear-gradient(to right, #ffccff 0%, #ff9966 60%);*/
+      /* background: linear-gradient(to bottom, #051e3e 0%, #851e3e 100%) no-repeat; */
+      background-color: #F1C233;
+      background-image: -webkit-linear-gradient(60deg, #F1C233  27%, #ED3D4F  20%);
+  }
+  /* CSS for screens that are 420 pixels or less will be put in this section */
+}
+
+@media screen and (min-height:1024px) {
+    .main {
+        top:150px;
+    }
+}
